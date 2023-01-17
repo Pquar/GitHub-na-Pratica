@@ -1,0 +1,64 @@
+## Verificação de instalação
+git --version
+
+## Configuração de Usuario
+Configurar usuario do git
+git config --global user.name "Seu nome"
+git config --global user.email "seuemail@gmail.com"
+
+Retorna usuario/email do git
+git config --global user.name
+git config --global user.name
+
+Retorna as demais configuraçoes do git
+git config --list
+
+##Repositorio Local
+inicia uma pasta de arquivos em /.git/ que contrala o versionamento do arquivos.
+git init
+
+Renomear o nome da Branch
+git config --global init.defaulBranch <novoNome>
+
+Retorna oque foi addicionado ou mudanças nos arquivos
+git status
+
+Adiciona um arquivo especifico
+git add <file>
+
+Adiciona todos os arquivos modificados
+git add --all
+git add .
+git add -A
+
+Remove o arquivo adicionado no rastreamento do Git
+git rm --cached <file>
+
+Remove todos arquivos adicionados no rastreamento 
+git rm --cached -r .
+
+Envia um Comit a branch seguida por uma mensagem
+git commit -m "initial commit"
+git commit -m "titulo do commit" -m "descricao"
+
+
+
+
+
+## Remover o repositorio
+Não deve ser feito a não ser se vc for um profissional habilitado.
+rm -fr .git/
+
+
+Ciclo de vida dos arquivos
+
+Untracked(não rastrado)
+Unmodified(não modificado)
+Modified(modificado)
+Staged(preparado)
+
+Exemplos:
+Untracked--(add)-->Staged
+Modified--(add)-->Staged
+Staged--(commit)-->Unmodified
+
