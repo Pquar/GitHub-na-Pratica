@@ -236,7 +236,7 @@ touch .gitignore
 ```
 todos arquivos bmp sao ignorados
 *.bmp
-Ignora arquivos especificos
+Ignora arquivos específicos
  #<file>
 Mais sobre o .gitignore em: https://github.com/github/gitignore
 
@@ -251,11 +251,13 @@ git update-index --no skip-worktree <file>
 ```
 git clone <arquivo> <nome do Arquivo Novo Clonado>
 
-git clone <origen do repositorio>
+git clone <Origen do repositório>
+
+git clone <Origen do repositório> <Nome da Pasta>
 ```
 ## Git com repositórios
 
-Para saber se tem um repositorio vinculado
+Para saber se tem um repositório vinculado
 ```
 git remote -v
 ```
@@ -271,7 +273,7 @@ git remote set-url origin <https://github.com/Usuario/novoNomeDoArquivo>
 
 
 
-Todos os camandos com git 
+Todos os comandos com git 
 ```
 git log --help
 ```
@@ -303,4 +305,25 @@ Untracked--(add)-->Staged
 Modified--(add)-->Staged
 
 Staged--(commit)-->Unmodified
+
+# Configuração de SHH
+
+Entrando no bash e passando o comando gera uma nova chave.
+```
+shh-keygen
+```
+Esta chave fica armazenada em /.shh
+```
+cd ~/.ssh/
+```
+O nome do arquivo e id_rsa.pub e fica registrado sua chave. Este arquivo pode ter seu nome mudado porem o conteúdo dentro dela não pode ser alterado.
+
+Adicionar um agente para auxiliar na conexão com SHH
+```
+eval $(shh-agent)
+```
+
+```
+ssh-add ~/.ssh/<nomeDoArquivoDaChave>
+```
 
