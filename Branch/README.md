@@ -45,10 +45,28 @@ git checkout -f <nomeBranch>
 ```
 
 
-Deleta uma branch
+## Remover ou Deleta uma branch
 ```
 git branch -d <nomeBranch>
 ```
+Força a remoção da branch
+```
+git branch -D <nomeBranch>
+```
+Remover uma branch remota
+```
+git push origin --delete <nomeBranch>
+```
+## Renomear uma branch
+```
+git branch -m <nomeBranch> <novoNomeBranch>
+```
+se voce estiver dentro da branch
+```
+git branch -m <novoNomeBranch>
+```
+
+Para alterar um nome de branch remoto e deletada a branch remota e cria uma nova branch com o novo nome. lembrando que precisa notificar os demais que também estão trabalhando na branch.
 
 ### Enviar a branch para o repositório remoto
 Caso não tenha enviado a branch para o repositório remoto, voce pode usar o comando abaixo para enviar a branch para o repositório remoto.
