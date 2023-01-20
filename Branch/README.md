@@ -78,3 +78,8 @@ ou
 ```
 git push -u origin <nomeBranch>
 ```
+### Fetch
+Baixa as branch's do repositório remoto para o repositório local. Porem não faz o merge com a branch local.
+```
+git fetch
+```
