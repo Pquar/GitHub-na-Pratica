@@ -310,7 +310,7 @@ Staged--(commit)-->Unmodified
 
 Entrando no bash e passando o comando gera uma nova chave.
 ```
-shh-keygen
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 Esta chave fica armazenada em /.shh
 ```
